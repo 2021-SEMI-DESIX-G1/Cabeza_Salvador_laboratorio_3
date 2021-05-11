@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio 3</title>
+    <script src="lab3.js"></script>
+</head>
+<body>
+    <h1>Resolución de los siguientes problemas. Las cadenas o entradas</h1>
+    <div>1. Ingrese una cadena <br>
+
+        <input id="palindromo" type="text"><br><br>
+        <button id="p1">Validar Cadena</button>
+
+    </div><br>
+    <div>
+        2. Cantidad de caracteres de la cadena
+        <p id="answer"></p>
+        <script>
+            function countLetters(text){
+                const answer ={};
+                for (let i = 0; i < text.length; i++) {
+                    if (answer[text[i]]) {
+                        answer[text[i]]++;
+                    }else{
+                        answer[text[i]] = 1;
+                    }
+                    
+                }
+                return answer;
+            }
+            const exampleText ='PRUEBAA';
+            document.getElementById("answer").innerText = JSON.stringify(countLetters(exampleText));
+        </script>
+    </div><br>
+    <div>
+        3. Ingresa un año para determinar si es bisiesto <br>
+        <input id="ano" type="text"><br><br>
+        <button onclick="operacion3()">Validar año</button>
+    </div><br>
+    <div id="p4">
+        4. Suma de Primos <br>
+        <input id="primo" type="text"><br><br>
+        <button onclick="primo(primo)">Realizar la suma</button>
+    </div>
+    
+</body>
+</html>
