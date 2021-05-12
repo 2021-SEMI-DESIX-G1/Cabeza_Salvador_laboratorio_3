@@ -1,8 +1,6 @@
 var cadena;
 function operacion1(){
-    
-    document.getElementById("p1").addEventListener('click', function(){
-        
+            
         cadena = document.getElementById("palindromo").value;
     
    cadena=cadena.replace(/ /g, "");
@@ -15,7 +13,6 @@ function operacion1(){
     }
     return true;
         
-              })
     }
     
     

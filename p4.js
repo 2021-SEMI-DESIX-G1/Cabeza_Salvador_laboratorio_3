@@ -1,5 +1,5 @@
 
-const numero = parseInt(prompt("Introduce un número"));
+const numero = parseInt(prompt("Suma de números Primos"));
 var j =1;
 var numerosPrimos = [];
 var suma=0;
@@ -17,7 +17,7 @@ for (; j <= numero; j++) {
     suma =suma + numerosPrimos[i];
     
 }
-alert(suma);
+alert("La suma de los números primos es: "+suma);
 //console.log(numerosPrimos);
 
 function primo(numero) {
