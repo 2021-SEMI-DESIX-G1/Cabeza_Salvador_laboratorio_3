@@ -29,33 +29,6 @@ function operacion3(){
     }
 }
 
-var c = document.getElementById("primo").value;
-var j = 2;
-var numerosPrimos = [];
-
-for (; j < c; j++) {
-
-  if (primo(j)) {
-    numerosPrimos.push(j);
-  }
-  
-}
-
-console.log(numerosPrimos);
-
-function primo(numero) {
-//var numero = document.getElementById("primo").value;
-  for (var i = 2; i < numero; i++) {
-
-    if (numero % i === 0) {
-      return false;
-    }
-
-  }
-
-  return numero !== 1;
-}
-
 
     
   // alert(cadena);
