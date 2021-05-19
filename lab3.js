@@ -1,21 +1,6 @@
-var cadena;
-function operacion1(){
-            
-        cadena = document.getElementById("palindromo").value;
-    
-   cadena=cadena.replace(/ /g, "");
-       
-    for (var i = 0; i < cadena.length; i++) {
-        if (cadena[i] != cadena[cadena.length-i-1]) {
-            return false;
-        }
+ 
+
         
-    }
-    return true;
-        
-    }
-    
-    
 function operacion3(){
     var ano;
     ano = document.getElementById("ano").value;
@@ -26,6 +11,3 @@ function operacion3(){
     }
 }
 
-
-    
-  // alert(cadena);
